@@ -26,6 +26,7 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        startsTimer()
         print("view Loaded")
         
         
@@ -98,9 +99,7 @@ extension GameViewController: GameSceneDelegate{
         
         // TODO: change the position according to the new coordinate system
         // the player cube is not moving locations any more; instead, the entire block moves.
-        if X == 1  && Y == 5 {
-            startsTimer()
-        }
+            
         if X == 11 && Y == 11 {
             stopsTimer()
         }
